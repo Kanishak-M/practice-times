@@ -1,0 +1,20 @@
+p{
+    font-weight: bolder;
+    font-size: x-large;
+    font-style: italic;
+}
+
+button{
+    margin-left: 45%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: royalblue;
+}
+button a{
+    color: silver;
+    padding: 10px;
+    text-decoration: none;
+}
+button a:hover{
+    padding: 20px;
+}
