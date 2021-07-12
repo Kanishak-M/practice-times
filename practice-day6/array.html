@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1> Sorting arrays</h1>
+    <p id="demo" ></p>
+    <button onclick="sortMyArr()">Hit me</button>
+    <script>
+        const arr = ['apple' ,'mango' ,'banana' , 'litchi' , 'guavava']
+        document.getElementById('demo').innerHTML=arr;  
+        function sortMyArr(){
+            arr.sort();
+            document.getElementById('demo').innerHTML=arr;
+        }
+    </script>
+</body>
+</html>

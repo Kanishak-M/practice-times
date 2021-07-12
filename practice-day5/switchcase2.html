@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+    const operation="mul";
+    let val;
+    switch(operation){
+        case "mul":
+             val=5*5;
+             break;
+        case "add":
+             val=5+5;
+             break;
+        default:
+             val=5-5;
+             break;
+    }
+    document.getElementById('demo').innerHTML=val;
+</script>
+</body>
+</html>

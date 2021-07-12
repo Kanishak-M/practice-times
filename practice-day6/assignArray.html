@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <button onclick="func()">Hit me</button>
+    <p id='test'>Sorted arr is </p>
+    <script>
+        const marksInSci = [ ['a' , 50],['b',40],['c',80],['d' ,90],['e',22],['f',67]]
+            document.getElementById('demo').innerHTML=marksInSci;
+            function Comparator(a, b) {
+                if (a[1] < b[1]) return -1;
+                if (a[1] > b[1]) return 1;
+                return 0;
+                }
+        function func(){
+            marksInSci.sort(Comparator);
+            document.getElementById('test').innerHTML+=marksInSci;
+        }
+
+    </script>
+</body>
+</html>
