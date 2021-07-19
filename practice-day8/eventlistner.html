@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    
+    <button >Hit me</button>
+    <p>on mouseover it will change color</p>
+    <script>
+        const ele = document.getElementsByTagName("button")[0];
+        ele.addEventListener('click' , () => {
+            document.write('hello wold')
+        })
+        const ele1=document.getElementsByTagName("p")[0];
+        ele1.addEventListener('mouseover',() => { 
+            document.getElementsByTagName("p")[0].style.color="green"
+        })
+        ele1.addEventListener('mouseout',() => { 
+            document.getElementsByTagName("p")[0].style.color="black"
+        })
+    </script>
+</body>
+</html>
